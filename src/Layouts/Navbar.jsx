@@ -29,18 +29,16 @@ function Navbar() {
 
         {/* Navigation Menu */}
         <nav
-  className={`w-full lg:w-auto flex flex-col md:flex-row sm:mt-3 sm:ml-6 sm:items-start sm:border-l-2 sm:border-gold md:border-none sm:w-fit lg:mt-0 md:justify-center lg:flex-row lg:justify-end md:items-center gap-4 lg:gap-10 sm:px-6 lg:px-4
-  transition-all duration-700 ease-in-out transform origin-top overflow-hidden
+          className={`w-full lg:w-auto flex flex-col md:flex-row mt-3 ml-6 md:ml-0 sm:items-start border-l-2  border-gold md:border-none sm:w-fit lg:mt-0 md:justify-center lg:flex-row lg:justify-end md:items-center gap-4 lg:gap-10 px-6 md:px-4
+  transition-all duration-700 ease-in-out transform origin-top
   ${
     isMobileMenuOpen
       ? "opacity-100 translate-y-0 scale-y-100 max-h-[500px]"
-      : "opacity-0 -translate-y-5 scale-y-0 max-h-0"
+      : "opacity-0 -translate-y-2 scale-y-0 max-h-0"
   } md:opacity-100 md:max-h-full md:h-auto md:translate-y-0 md:scale-y-100`}
->
-
-
-          <ul className="flex flex-col md:flex-row lg:flex-row  sm:items-start md:items-center lg:items-center  gap-4 lg:gap-6">
-            <li className="hover:text-gold transition duration-700">Home</li>
+        >
+          <ul className="flex  flex-col md:flex-row lg:flex-row  sm:items-start md:items-center lg:items-center  gap-4 lg:gap-6">
+            <li className="hover:text-gold transition duration-700 w-fit">Home</li>
             <Dropdown
               title="Premium Cars"
               options={[
@@ -52,17 +50,17 @@ function Navbar() {
               ]}
               icon={DropI}
             />
-            <li className="hover:text-gold transition duration-700">
+            <li className="hover:text-gold  transition duration-700 w-fit">
               Rental Plans
             </li>
-            <li className="hover:text-gold transition duration-700">
+            <li className="hover:text-gold transition duration-700 w-fit">
               Locations
             </li>
-            <li className="hover:text-gold transition duration-700">Account</li>
-            <li className="hover:p-2 rounded-full border border-transparent transition-all duration-700 ease-in-out hover:text-gold hover:border-gold">
+            <li className="hover:text-gold transition duration-700 w-fit">Account</li>
+            <li className="hover:p-2 rounded-full border border-transparent w-fit transition-all duration-700 ease-in-out hover:text-gold hover:border-gold">
               Book Now
             </li>
-            <li className="hover:text-gold transition duration-500">
+            <li className="hover:p-2  rounded-full border border-transparent w-fit transition-all duration-700 ease-in-out hover:text-gold hover:border-gold">
               <LoginIcon />
             </li>
           </ul>

@@ -17,6 +17,7 @@ module.exports = {
         modern: ["Montserrat", "sans-serif"],
         bodoni: ['Bodoni', 'serif'],
       },
+      
       // screens: {
       //   'sm': '640px',
       //   'md': '768px',
